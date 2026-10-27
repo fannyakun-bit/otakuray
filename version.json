@@ -1,7 +1,7 @@
 {
-  "versionName": "2.0",
+  "versionName": "2.1",
   "url": "https://github.com/fannyakun-bit/otakuray/releases/latest",
-  "notes": "Versi 2.0: trailer dan skor MAL, rating bintang, catatan dan koleksi, progres per anime, pemutar lebih pintar (tahan 2x, isi layar, hitung mundur episode), pengingat jadwal, pencarian suara, warna aksen, hemat data seluler, dan dukungan tablet serta Android TV.",
+  "notes": "Versi 2.1: Dukungan support untuk Android TV,Perbaikan bug pada android TV,trailer dan skor MAL, rating bintang, catatan dan koleksi, progres per anime, pemutar lebih pintar (tahan 2x, isi layar, hitung mundur episode), pengingat jadwal, pencarian suara, warna aksen, hemat data seluler, dan dukungan tablet serta Android TV.",
   "announcement": "",
   "announcementId": "1"
 }
