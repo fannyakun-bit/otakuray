@@ -1,7 +1,7 @@
 {
-  "versionName": "3.0",
+  "versionName": "3.1",
   "url": "https://github.com/fannyakun-bit/otakuray/releases/latest",
-  "notes": "Versi 3.0: katalog Anime, Movie, dan Donghua lebih lengkap dalam satu tempat. Pencarian lebih pintar (ketik donghua, movie, atau genre langsung muncul). Rekomendasi dan halaman Kategori kini ikut sumber AnimeSail. Dukungan Android TV & STB: navigasi pakai remote, penanda fokus, pemutar langsung layar penuh, plus perbaikan bug di Android TV.",
+  "notes": "Versi 3.1:Perbaikan pemutaran yang terlalu lama, katalog Anime, Movie, dan Donghua lebih lengkap dalam satu tempat. Pencarian lebih pintar (ketik donghua, movie, atau genre langsung muncul). Rekomendasi dan halaman Kategori kini ikut sumber AnimeSail. Dukungan Android TV & STB: navigasi pakai remote, penanda fokus, pemutar langsung layar penuh, plus perbaikan bug di Android TV.",
   "announcement": "Katalog makin lengkap: Anime, Movie, dan Donghua + pencarian lebih pintar + dukungan Android TV. Nonton tetap gratis, tapi kalau lagi happy boleh traktir kopi di Pengaturan ☕",
   "announcementId": "2"
 }
