@@ -1,7 +1,7 @@
 {
   "versionName": "4.3",
   "url": "https://github.com/fannyakun-bit/otakuray/releases/latest",
-  "apkUrl": "https://github.com/fannyakun-bit/otakuray/releases/latest/download/Otakuray.apk",
-  "notes": "Perubahan Layout pada android tv ,memperbarui font,Pembaruan langsung dari dalam aplikasi melalui download manager diversi selanjutnya tanpa harus melalui browser".",
-  "minVersion": "4.3"
+  "notes": "Versi 4.3 Perubahan font dan layout di android TV,Menyediakan update melalui download manager diversi 4.3 ke atas,dan perbaikan bug pada android",
+  "announcement": "Tampilan dan font lebih menarik pada android tv dan android dan diupdate selanjutnya menggunakan download manager,Yuk yang merasa sudah nyaman sama aplikasinya dibantu support lewat donasi dipengaturan,biar kerawat appnya,5ribu sangat berarti agar mimin semangat hebe☕",
+  "announcementId": "2"
 }
