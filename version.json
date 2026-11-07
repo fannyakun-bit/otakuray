@@ -1,7 +1,7 @@
 {
   "versionName": "4.3.1",
-  "url": "https://github.com/fannyakun-bit/otakuray/releases/latest",
-  "apkUrl": "https://github.com/fannyakun-bit/otakuray/releases/latest/download/Otakuray.apk",
+  "url": "https://github.com/fannyakun-bit/otakuray/releases/tag/v4.3.1",
+  "apkUrl": "https://github.com/fannyakun-bit/otakuray/releases/download/v4.3.1/Otakuray.apk",
   "notes": "Tested android TV 👌,Pembaruan langsung dari dari download manager dan alamat situs otomatis.",
   "minVersion": "4.3.1"
 }
