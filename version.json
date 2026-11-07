@@ -1,7 +1,7 @@
 {
-  "versionName": "4.3",
+  "versionName": "4.3.1",
   "url": "https://github.com/fannyakun-bit/otakuray/releases/latest",
-  "notes": "Versi 4.3 Perubahan font dan layout di android TV,Menyediakan update melalui download manager diversi 4.3 ke atas,dan perbaikan bug pada android",
-  "announcement": "Android TV navigasi remotenya masih bermasalah mimin gaada device buat tesnya ,pengguna tvnya cuman bisa ngeluh dimintain tolong pada gamau🗿sukur2 dibenerin",
-  "announcementId": "3"
+  "apkUrl": "https://github.com/fannyakun-bit/otakuray/releases/latest/download/Otakuray.apk",
+  "notes": "Tested android TV 👌,Pembaruan langsung dari dari download manager dan alamat situs otomatis.",
+  "minVersion": "4.3.1"
 }
