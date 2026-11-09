@@ -6,11 +6,13 @@
 <title>Kebijakan Privasi – Otakuray</title>
 <meta name="theme-color" content="#07070a">
 <link rel="stylesheet" href="style.css">
+<script>document.documentElement.className+=" js"</script>
 </head>
 <body>
 <nav><div class="wrap">
 <a class="logo" href="./">Otaku<b>ray</b></a>
-<div class="menu">
+<div class="navr"><a class="nb" href="https://github.com/fannyakun-bit/otakuray/releases/latest">Unduh</a><button class="ham" id="ham" type="button" aria-label="Buka menu" aria-expanded="false" aria-controls="menu"><span></span><span></span><span></span></button></div>
+<div class="menu" id="menu">
 <a href="fitur.html">Fitur</a>
 <a href="tampilan.html">Tampilan</a>
 <a href="android-tv.html">Android TV</a>
@@ -32,11 +34,14 @@
 <h2>Data yang tersimpan di perangkat</h2>
 <p>Pengaturan, profil, riwayat tontonan, dan daftar tersimpan disimpan di perangkatmu sendiri dan tidak dikirim ke pengembang. Data ini terhapus bila kamu menghapus data aplikasi atau mencopot pemasangannya.</p>
 
+<h2>Izin perangkat</h2>
+<p>Aplikasi dapat meminta izin berikut hanya untuk fitur terkait: <b>internet</b> (memuat daftar anime dan memutar video), <b>notifikasi</b> (pengingat jadwal tayang yang kamu nyalakan), dan <b>penyimpanan atau unduhan</b> (fitur unduh dan pembaruan aplikasi). Izin ini tidak dipakai untuk mengumpulkan data pribadi.</p>
+
 <h2>Koneksi jaringan</h2>
 <p>Aplikasi memerlukan internet untuk memuat daftar anime dan memutar video dari sumber pihak ketiga, serta untuk memeriksa versi terbaru di GitHub. Saat terhubung ke layanan tersebut, alamat IP-mu dapat terlihat oleh layanan itu sesuai kebijakan masing-masing.</p>
 
 <h2 id="disclaimer">Disclaimer konten</h2>
-<p>Otakuray tidak menyimpan, menghosting, atau mengunggah video apa pun. Aplikasi hanya menampilkan konten yang tersedia dari sumber pihak ketiga. Hak cipta dimiliki oleh pemilik masing-masing. Jika kamu pemilik hak dan keberatan, hubungi kami lewat halaman <a href="kontak.html"><u>Kontak</u></a>.</p>
+<p>Otakuray tidak menyimpan, menghosting, atau mengunggah video apa pun. Aplikasi hanya menampilkan konten yang tersedia dari sumber pihak ketiga. Nama, judul, dan gambar poster adalah milik pemegang hak masing-masing, dan Otakuray tidak berafiliasi dengan studio, penerbit, atau situs sumber mana pun. Jika kamu pemilik hak dan keberatan, hubungi kami lewat halaman <a href="kontak.html"><u>Kontak</u></a>.</p>
 
 <h2>Anak-anak</h2>
 <p>Aplikasi tidak ditujukan untuk mengumpulkan data dari siapa pun, termasuk anak-anak.</p>
@@ -55,5 +60,14 @@
 </div>
 <div class="copy">© 2026 Otakuray. Otakuray tidak menyimpan atau menghosting video; konten berasal dari sumber pihak ketiga.</div>
 </div></footer>
+<script>
+(function(){var h=document.getElementById("ham"),n=document.querySelector("nav");if(!h||!n)return;
+function s(o){n.classList.toggle("open",o);h.setAttribute("aria-expanded",o?"true":"false");h.setAttribute("aria-label",o?"Tutup menu":"Buka menu")}
+h.addEventListener("click",function(){s(!n.classList.contains("open"))});
+n.querySelectorAll(".menu a").forEach(function(a){a.addEventListener("click",function(){s(false)})});
+document.addEventListener("keydown",function(e){if(e.key==="Escape"){s(false);h.focus()}});
+document.addEventListener("click",function(e){if(!n.contains(e.target))s(false)});
+})();
+</script>
 </body>
 </html>

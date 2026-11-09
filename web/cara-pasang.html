@@ -7,11 +7,13 @@
 <meta name="description" content="Cara memasang Otakuray">
 <meta name="theme-color" content="#07070a">
 <link rel="stylesheet" href="style.css">
+<script>document.documentElement.className+=" js"</script>
 </head>
 <body>
 <nav><div class="wrap">
 <a class="logo" href="./">Otaku<b>ray</b></a>
-<div class="menu">
+<div class="navr"><a class="nb" href="https://github.com/fannyakun-bit/otakuray/releases/latest">Unduh</a><button class="ham" id="ham" type="button" aria-label="Buka menu" aria-expanded="false" aria-controls="menu"><span></span><span></span><span></span></button></div>
+<div class="menu" id="menu">
 <a href="fitur.html">Fitur</a>
 <a href="tampilan.html">Tampilan</a>
 <a href="android-tv.html">Android TV</a>
@@ -44,5 +46,14 @@
 </div>
 <div class="copy">© 2026 Otakuray. Otakuray tidak menyimpan atau menghosting video; konten berasal dari sumber pihak ketiga.</div>
 </div></footer>
+<script>
+(function(){var h=document.getElementById("ham"),n=document.querySelector("nav");if(!h||!n)return;
+function s(o){n.classList.toggle("open",o);h.setAttribute("aria-expanded",o?"true":"false");h.setAttribute("aria-label",o?"Tutup menu":"Buka menu")}
+h.addEventListener("click",function(){s(!n.classList.contains("open"))});
+n.querySelectorAll(".menu a").forEach(function(a){a.addEventListener("click",function(){s(false)})});
+document.addEventListener("keydown",function(e){if(e.key==="Escape"){s(false);h.focus()}});
+document.addEventListener("click",function(e){if(!n.contains(e.target))s(false)});
+})();
+</script>
 </body>
 </html>

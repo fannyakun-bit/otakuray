@@ -7,11 +7,13 @@
 <meta name="description" content="Fitur Otakuray">
 <meta name="theme-color" content="#07070a">
 <link rel="stylesheet" href="style.css">
+<script>document.documentElement.className+=" js"</script>
 </head>
 <body>
 <nav><div class="wrap">
 <a class="logo" href="./">Otaku<b>ray</b></a>
-<div class="menu">
+<div class="navr"><a class="nb" href="https://github.com/fannyakun-bit/otakuray/releases/latest">Unduh</a><button class="ham" id="ham" type="button" aria-label="Buka menu" aria-expanded="false" aria-controls="menu"><span></span><span></span><span></span></button></div>
+<div class="menu" id="menu">
 <a href="fitur.html" class="cur" aria-current="page">Fitur</a>
 <a href="tampilan.html">Tampilan</a>
 <a href="android-tv.html">Android TV</a>
@@ -28,12 +30,12 @@
 <h2>Dibuat untuk nyaman menonton.</h2>
 <p class="sub">Semua yang kamu butuhkan, tanpa tampilan yang ramai.</p>
 <div class="grid">
-<div class="card"><div class="ic">🎬</div><h3>Tampilan sinematik</h3><p>Poster utama, carousel Top 10, filter, dan navigasi bawah yang ringkas.</p></div>
+<div class="card"><div class="ic">🎬</div><h3>Beranda sinematik</h3><p>Poster utama bergulir, carousel Top 10 Sedang Tayang, dan filter Sedang Tayang, Selesai Tayang, serta Kategori.</p></div>
+<div class="card"><div class="ic">🗓️</div><h3>Jadwal tayang</h3><p>Lihat jadwal anime per hari dan nyalakan pengingat untuk judul yang kamu ikuti.</p></div>
+<div class="card"><div class="ic">👥</div><h3>Banyak profil</h3><p>Pilih profil di layar Siapa yang menonton dan atur sendiri-sendiri, tanpa akun.</p></div>
+<div class="card"><div class="ic">🎞️</div><h3>Pilihan kualitas</h3><p>Otomatis, 360p, 480p, 720p, atau 1080p, plus lompat maju atau mundur 10 detik.</p></div>
+<div class="card"><div class="ic">📚</div><h3>Daftar Saya &amp; Koleksi</h3><p>Simpan anime favorit, kelompokkan ke koleksi, dan beri rating sendiri.</p></div>
 <div class="card"><div class="ic">📺</div><h3>Siap Android TV</h3><p>Dioperasikan penuh dengan remote, dengan sorotan fokus yang jelas.</p></div>
-<div class="card"><div class="ic">🎞️</div><h3>Pilihan kualitas</h3><p>Pilih kualitas video sesuai kecepatan internet dan layarmu.</p></div>
-<div class="card"><div class="ic">👤</div><h3>Profil pengguna</h3><p>Atur profilmu sendiri tanpa perlu membuat akun.</p></div>
-<div class="card"><div class="ic">🔎</div><h3>Cari &amp; filter</h3><p>Temukan anime lewat pencarian dan filter genre.</p></div>
-<div class="card"><div class="ic">🔄</div><h3>Pembaruan mudah</h3><p>Cek versi baru dan unduh langsung dari dalam aplikasi.</p></div>
 </div>
 </div></section>
 </main>
@@ -45,5 +47,14 @@
 </div>
 <div class="copy">© 2026 Otakuray. Otakuray tidak menyimpan atau menghosting video; konten berasal dari sumber pihak ketiga.</div>
 </div></footer>
+<script>
+(function(){var h=document.getElementById("ham"),n=document.querySelector("nav");if(!h||!n)return;
+function s(o){n.classList.toggle("open",o);h.setAttribute("aria-expanded",o?"true":"false");h.setAttribute("aria-label",o?"Tutup menu":"Buka menu")}
+h.addEventListener("click",function(){s(!n.classList.contains("open"))});
+n.querySelectorAll(".menu a").forEach(function(a){a.addEventListener("click",function(){s(false)})});
+document.addEventListener("keydown",function(e){if(e.key==="Escape"){s(false);h.focus()}});
+document.addEventListener("click",function(e){if(!n.contains(e.target))s(false)});
+})();
+</script>
 </body>
 </html>

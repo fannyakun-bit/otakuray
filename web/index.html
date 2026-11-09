@@ -7,11 +7,13 @@
 <meta name="description" content="Otakuray: aplikasi nonton anime untuk Android dan Android TV dengan tampilan modern, pilihan kualitas video, dan profil pengguna.">
 <meta name="theme-color" content="#07070a">
 <link rel="stylesheet" href="style.css">
+<script>document.documentElement.className+=" js"</script>
 </head>
 <body>
 <nav><div class="wrap">
 <a class="logo" href="./">Otaku<b>ray</b></a>
-<div class="menu">
+<div class="navr"><a class="nb" href="https://github.com/fannyakun-bit/otakuray/releases/latest">Unduh</a><button class="ham" id="ham" type="button" aria-label="Buka menu" aria-expanded="false" aria-controls="menu"><span></span><span></span><span></span></button></div>
+<div class="menu" id="menu">
 <a href="fitur.html">Fitur</a>
 <a href="tampilan.html">Tampilan</a>
 <a href="android-tv.html">Android TV</a>
@@ -31,18 +33,11 @@
 <h1>Nonton anime dengan tampilan <span>sinematik</span>.</h1>
 <p class="lead">Otakuray adalah aplikasi nonton anime untuk Android dan Android TV: tampilan modern, pilihan kualitas video, dan profil pengguna.</p>
 <div class="cta"><a class="btn" href="https://github.com/fannyakun-bit/otakuray/releases/latest">⬇ Unduh APK</a><a class="btn o" href="cara-pasang.html">Cara pasang</a></div>
-<p class="note">Versi 4.3.1 · Android 7.0 ke atas disarankan</p>
+<p class="note">Versi 4.3.1 · Gratis, tanpa akun</p>
 </div>
-<div class="stage"><div class="phone"><div class="scr">
-<div class="top"><b>Otakuray</b><div class="av">O</div></div>
-<div class="chips"><i>Semua</i><i>Aksi</i><i>Romansa</i><i>Fantasi</i></div>
-<div class="poster"></div>
-<h4>Judul Anime</h4><small>Aksi · Fantasi · 12 episode</small>
-<div class="bt"><u>▶ Putar</u><u class="g">+ Daftar</u></div>
-<div class="nav2"><u class="a">Beranda</u><u>Cari</u><u>Daftar</u><u>Profil</u></div>
-</div></div>
-<div class="chip c1">Top 10<small>Carousel mingguan</small></div>
-<div class="chip c2">Kualitas video<small>360p – 1080p</small></div>
+<div class="stage"><div class="phone sc"><img src="img/beranda.webp" alt="Layar Beranda Otakuray" width="450" height="908" loading="lazy" decoding="async"></div>
+<div class="chip c1">Top 10<small>Sedang tayang</small></div>
+<div class="chip c2">Kualitas video<small>Otomatis, 360p – 1080p</small></div>
 </div>
 </div>
 </header>
@@ -76,5 +71,14 @@
 </div>
 <div class="copy">© 2026 Otakuray. Otakuray tidak menyimpan atau menghosting video; konten berasal dari sumber pihak ketiga.</div>
 </div></footer>
+<script>
+(function(){var h=document.getElementById("ham"),n=document.querySelector("nav");if(!h||!n)return;
+function s(o){n.classList.toggle("open",o);h.setAttribute("aria-expanded",o?"true":"false");h.setAttribute("aria-label",o?"Tutup menu":"Buka menu")}
+h.addEventListener("click",function(){s(!n.classList.contains("open"))});
+n.querySelectorAll(".menu a").forEach(function(a){a.addEventListener("click",function(){s(false)})});
+document.addEventListener("keydown",function(e){if(e.key==="Escape"){s(false);h.focus()}});
+document.addEventListener("click",function(e){if(!n.contains(e.target))s(false)});
+})();
+</script>
 </body>
 </html>

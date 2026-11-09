@@ -7,11 +7,13 @@
 <meta name="description" content="Tampilan aplikasi Otakuray">
 <meta name="theme-color" content="#07070a">
 <link rel="stylesheet" href="style.css">
+<script>document.documentElement.className+=" js"</script>
 </head>
 <body>
 <nav><div class="wrap">
 <a class="logo" href="./">Otaku<b>ray</b></a>
-<div class="menu">
+<div class="navr"><a class="nb" href="https://github.com/fannyakun-bit/otakuray/releases/latest">Unduh</a><button class="ham" id="ham" type="button" aria-label="Buka menu" aria-expanded="false" aria-controls="menu"><span></span><span></span><span></span></button></div>
+<div class="menu" id="menu">
 <a href="fitur.html">Fitur</a>
 <a href="tampilan.html" class="cur" aria-current="page">Tampilan</a>
 <a href="android-tv.html">Android TV</a>
@@ -26,23 +28,15 @@
 <section id="tampilan" class="alt"><div class="wrap">
 <div class="center"><p class="eyebrow">Tampilan</p>
 <h2>Sederhana, cepat, enak dilihat.</h2>
-<p class="sub">Tiga layar yang paling sering kamu pakai.</p></div>
+<p class="sub">Lima layar yang paling sering kamu pakai.</p></div>
 <div class="shots">
-<figure><div class="phone"><div class="scr"><div class="top"><b>Otakuray</b><div class="av">O</div></div>
-<div class="chips"><i>Semua</i><i>Aksi</i><i>Romansa</i></div>
-<div class="poster"></div><h4>Judul Anime</h4><small>Aksi · Fantasi</small>
-<div class="bt"><u>▶ Putar</u><u class="g">+ Daftar</u></div>
-<div class="nav2"><u class="a">Beranda</u><u>Cari</u><u>Daftar</u><u>Profil</u></div></div></div><figcaption>Beranda</figcaption></figure>
-<figure><div class="phone"><div class="scr"><h5>Top 10 minggu ini</h5>
-<div class="row"><i></i><i></i><i></i></div><div class="row"><i></i><i></i><i></i></div><div class="row"><i></i><i></i><i></i></div>
-<div class="nav2"><u>Beranda</u><u class="a">Cari</u><u>Daftar</u><u>Profil</u></div></div></div><figcaption>Top 10 &amp; pencarian</figcaption></figure>
-<figure><div class="phone"><div class="scr"><h5>Pilih kualitas</h5>
-<div class="q"><span><b>1080p</b></span><em>Full HD</em></div>
-<div class="q"><span>720p</span><em>HD</em></div>
-<div class="q"><span>480p</span><em>Hemat data</em></div>
-<div class="q"><span>360p</span><em>Super hemat</em></div>
-<div class="bar"><i></i></div></div></div><figcaption>Pemutar &amp; kualitas</figcaption></figure>
+<figure><div class="phone sc"><img src="img/beranda.webp" alt="Layar Beranda: rekomendasi dan Top 10" width="450" height="908" loading="lazy" decoding="async"></div><figcaption>Beranda</figcaption></figure>
+<figure><div class="phone sc"><img src="img/detail.webp" alt="Layar detail anime" width="450" height="908" loading="lazy" decoding="async"></div><figcaption>Detail anime</figcaption></figure>
+<figure><div class="phone sc"><img src="img/pemutar.webp" alt="Pemutar dengan pilihan kualitas" width="450" height="908" loading="lazy" decoding="async"></div><figcaption>Pemutar &amp; kualitas</figcaption></figure>
+<figure><div class="phone sc"><img src="img/jadwal.webp" alt="Layar jadwal tayang" width="450" height="908" loading="lazy" decoding="async"></div><figcaption>Jadwal tayang</figcaption></figure>
+<figure><div class="phone sc"><img src="img/profil.webp" alt="Layar pilih profil" width="450" height="908" loading="lazy" decoding="async"></div><figcaption>Pilih profil</figcaption></figure>
 </div>
+<p class="note center">Gambar poster pada tangkapan layar sengaja disamarkan. Hak cipta poster dan judul milik pemegang haknya masing-masing.</p>
 </div></section>
 </main>
 <footer><div class="wrap">
@@ -53,5 +47,14 @@
 </div>
 <div class="copy">© 2026 Otakuray. Otakuray tidak menyimpan atau menghosting video; konten berasal dari sumber pihak ketiga.</div>
 </div></footer>
+<script>
+(function(){var h=document.getElementById("ham"),n=document.querySelector("nav");if(!h||!n)return;
+function s(o){n.classList.toggle("open",o);h.setAttribute("aria-expanded",o?"true":"false");h.setAttribute("aria-label",o?"Tutup menu":"Buka menu")}
+h.addEventListener("click",function(){s(!n.classList.contains("open"))});
+n.querySelectorAll(".menu a").forEach(function(a){a.addEventListener("click",function(){s(false)})});
+document.addEventListener("keydown",function(e){if(e.key==="Escape"){s(false);h.focus()}});
+document.addEventListener("click",function(e){if(!n.contains(e.target))s(false)});
+})();
+</script>
 </body>
 </html>
