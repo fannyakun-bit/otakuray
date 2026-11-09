@@ -1,7 +1,7 @@
 {
   "versionName": "4.4",
   "url": "https://github.com/fannyakun-bit/otakuray/releases/tag/v4.4",
-  "apkUrl": "https://github.com/fannyakun-bit/otakuray/releases/download/v4.4/Otakuray.apk",
+  "apkUrl": "https://github.com/fannyakun-bit/otakuray/releases/download/v.4.4/Otakuray.apk",
   "notes": "Navigasi remote Android TV diperbaiki dan sudah diuji. Jadwal Tayang dibangun ulang: anime tamat tidak muncul lagi, ada estimasi jam rilis, dan tidak ada lagi anime yang dobel di hari berbeda.",
   "minVersion": "4.4"
 }
