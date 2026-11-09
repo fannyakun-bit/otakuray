@@ -109,4 +109,4 @@ footer a:hover{color:var(--tx)}
 .doc li{margin:4px 0}
 .up{color:var(--mu);font-size:14px;margin:6px 0 20px}
 @media(max-width:820px){.hero .wrap{grid-template-columns:1fr}.stage{margin-top:20px}.grid,.steps{grid-template-columns:1fr}.card.w{grid-column:auto}.strip .wrap{grid-template-columns:repeat(2,1fr)}nav a.l{display:none}section{padding:60px 0}}
-@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.rv.pre:not(.in){opacity:1;transform:none}}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.s1{opacity:1;transform:none}.rv.pre:not(.in){opacity:1;transform:none}}
