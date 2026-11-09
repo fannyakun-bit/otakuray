@@ -149,3 +149,6 @@ html{scroll-padding-top:120px}
 .shots{justify-content:flex-start}
 }
 @media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+
+.menu a.cur{color:var(--tx);font-weight:600}
+main>section:first-child{padding-top:64px}
