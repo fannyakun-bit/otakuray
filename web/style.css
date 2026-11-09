@@ -139,11 +139,13 @@ footer{border-top:1px solid var(--line);padding:48px 0 28px;color:var(--mu);font
 .strip .wrap{grid-template-columns:repeat(2,1fr)}
 .stage{margin-top:24px}.chip{display:none}
 section{padding:60px 0}
-.bg{display:block;cursor:pointer;font-size:26px;line-height:1;padding:6px 4px}
-.menu{display:none;position:absolute;top:66px;left:-22px;right:-22px;flex-direction:column;align-items:stretch;gap:0;background:#0b0b10;border-bottom:1px solid var(--line);padding:8px 22px 16px}
-.menu a{padding:13px 0;border-bottom:1px solid var(--line);font-size:16px}
-.menu a.nb{margin-top:12px;text-align:center;border:0}
-#m:checked~.menu{display:flex}
+.bg{display:none}
+nav .wrap{flex-wrap:wrap;height:auto;padding-top:12px;padding-bottom:0}
+.menu{width:100%;order:3;display:flex;overflow-x:auto;gap:22px;padding:12px 0 12px;white-space:nowrap;-webkit-overflow-scrolling:touch;scrollbar-width:none}
+.menu::-webkit-scrollbar{display:none}
+.menu a{flex:0 0 auto;font-size:15px}
+.menu a.nb{padding:7px 16px}
+html{scroll-padding-top:120px}
 .shots{justify-content:flex-start}
 }
 @media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
