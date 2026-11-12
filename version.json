@@ -1,7 +1,8 @@
+
 {
-  "versionName": "4.4",
-  "url": "https://github.com/fannyakun-bit/otakuray/releases/tag/v.4.4",
-  "apkUrl": "https://github.com/fannyakun-bit/otakuray/releases/download/v.4.4/Otakuray.apk",
-  "notes": "Navigasi remote Android TV diperbaiki dan sudah diuji. Jadwal Tayang dibangun ulang: anime tamat tidak muncul lagi, ada estimasi jam rilis, dan tidak ada lagi anime yang dobel di hari berbeda.",
-  "minVersion": "4.4"
+  "versionName": "4.5",
+  "url": "https://github.com/fannyakun-bit/otakuray/releases/tag/v.4.5",
+  "apkUrl": "https://github.com/fannyakun-bit/otakuray/releases/download/v.4.5/Otakuray.apk",
+  "notes": "Otakuray v4.5 - Final Release. Terima kasih telah menemani perjalanan Otakuray dari versi 1.0 hingga 4.5. Pengembangan dihentikan untuk sementara waktu. Tidak ada iklan paksa, tidak ada VIP, dan semua fitur tetap dapat dinikmati. Terima kasih telah menjadi bagian dari perjalanan ini. ❤️",
+  "minVersion": "4.5"
 }
